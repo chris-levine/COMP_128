@@ -39,32 +39,29 @@ while status == "yes":
         print("You entered " + str(num1) + " + " + str(num2))
         print("The answer is: " + str((num1 + num2)))
         print(" ") 
-        status = input("Would you like to make another calculation? (yes or no) ")
     elif operator == "-":
         print(" ")
         print("You entered " + str(num1) + " - " + str(num2))
         print("The answer is: " + str((num1 - num2)))
         print(" ") 
-        status = input("Would you like to make another calculation? (yes or no) ")
     elif operator == "*":
         print(" ")
         print("You entered " + str(num1) + " * " + str(num2))
         print("The answer is: " + str((num1 * num2)))
         print(" ") 
-        status = input("Would you like to make another calculation? (yes or no) ")
+    elif operator == "/" and num2 == 0:
+        print(" ")
+        print("You cannot divide by zero!")
+        print(" ")
     elif operator == "/":
         print(" ")
         print("You entered " + str(num1) + " / " + str(num2))
         print("The answer is: " + str((num1 / num2)))
         print(" ") 
-        status = input("Would you like to make another calculation? (yes or no) ")
-    elif operator == "/" and num2 == 0:
-        print(" ")
-        print("You cannot divide by zero!")
-        print(" ")
-        status = input("Would you like to make another calculation? (yes or no) ")
     else:
         break
+
+    status = input("Would you like to make another calculation? (yes or no) ")
 print("---------------------------------------")
 print(" ")
 print("Thank you for using my program!")

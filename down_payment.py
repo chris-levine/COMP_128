@@ -26,9 +26,6 @@ while status == "yes":
         print(" ")
         print("---------------------------------------")
         print(" ")
-        status = input("Woud you like to enter another number? (yes or no) ")
-        print(" ")
-        print("---------------------------------------")
     
     elif house_price >= 200000 and house_price < 399999:
         down_payment = down_payment + round(house_price * .15, 2)
@@ -37,9 +34,6 @@ while status == "yes":
         print(" ")
         print("---------------------------------------")
         print(" ")
-        status = input("Woud you like to enter another number? (yes or no) ")
-        print(" ")
-        print("---------------------------------------")
     
     elif house_price >= 400000: 
         down_payment = down_payment + round(house_price * .1, 2)
@@ -48,15 +42,10 @@ while status == "yes":
         print(" ")
         print("---------------------------------------")
         print(" ")
-        status = input("Woud you like to enter another number? (yes or no) ")
-        print(" ")
-        print("---------------------------------------")
 
     else:
         print("Invalid response!")
         print(" ")
-        status = input("Would you like to try again (yes or no) ")
-        print(" ")
-        print("---------------------------------------")
+    status = input("Woud you like to enter another number? (yes or no) ")
 
 print("Thank you for using this program!")
